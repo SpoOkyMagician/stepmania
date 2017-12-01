@@ -7,13 +7,13 @@
 #include <fcntl.h>
 #endif
 
-#define DoOpen _open
+#define DoOpen open
 #define DoStat stat
 #define DoMkdir mkdir
 #define DoFindFirstFile FindFirstFile
 #define DoRename rename
 #define DoRemove remove
-#define DoRmdir _rmdir
+#define DoRmdir rmdir
 std::string DoPathReplace( const std::string &sPath );
 
 #if defined(WIN32)
